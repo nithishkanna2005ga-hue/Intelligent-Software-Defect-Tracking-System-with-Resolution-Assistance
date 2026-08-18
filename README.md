@@ -1,25 +1,25 @@
 # Intelligent Software Defect Tracking System with Resolution Assistance
 
-An intelligent web-based software defect management system that combines **defect tracking, data analytics, machine learning, duplicate detection, and resolution-time prediction** in a unified Streamlit application.
-
-The system uses historical software defect data to provide actionable insights and AI-assisted predictions for improving defect management and resolution.
+An intelligent web-based software defect management system that combines **defect tracking, analytics, machine learning, duplicate detection, and resolution-time prediction** in a unified Streamlit application.
 
 ## Overview
 
-The application provides an interactive interface for managing and analyzing software defects. It enables users to explore defect records, monitor trends, analyze severity and priority, identify potential duplicates, and obtain machine-learning-based predictions.
+The system uses historical software defect data to help development and testing teams monitor defects, identify patterns, predict defect properties, and support faster resolution.
 
-### Key Capabilities
+## Key Features
 
-* **Defect Management** — Search, filter, and analyze defect records
-* **Dashboard & Analytics** — Monitor defect statistics, distributions, and trends
-* **AI-Based Prediction** — Predict defect severity, priority, and resolution time
+* **Dashboard** — Overview of defect statistics, status, severity, priority, and modules
+* **Bug Records** — Search, filter, and analyze software defect records
+* **Analytics** — Interactive charts and statistical analysis
+* **Trends** — Analyze defect patterns and trends over time
+* **AI Prediction** — Predict severity, priority, and resolution time
 * **Duplicate Detection** — Identify potentially similar defect reports
-* **Resolution Analysis** — Analyze historical and predicted resolution times
-* **Reports & Export** — Generate and export defect-related information
+* **Resolution Analysis** — Analyze and estimate defect resolution time
+* **Reports & Export** — Generate and export defect information
 
 ## Technology Stack
 
-| Technology   | Usage                          |
+| Technology   | Purpose                        |
 | ------------ | ------------------------------ |
 | Python       | Application and ML development |
 | Streamlit    | Web application framework      |
@@ -28,100 +28,65 @@ The application provides an interactive interface for managing and analyzing sof
 | Scikit-learn | Machine learning               |
 | NLTK         | Natural language processing    |
 | Plotly       | Interactive visualization      |
-| Joblib       | Model serialization            |
+| Joblib       | Model storage                  |
 | Git & GitHub | Version control                |
 
 ## Project Structure
 
 ```text
-Intelligent-Software-Defect-Tracking-System-with-Resolution-Assistance/
-│
 ├── app.py
 ├── requirements.txt
 ├── train_priority_model.py
 ├── train_resolution_model.py
 ├── train_severity_model.py
-│
 ├── assets/
-│   └── style.css
-│
 ├── data/
-│   └── Bug_Life_Cycle_Managementreport.csv
-│
 ├── models/
-│   ├── priority_model.pkl
-│   ├── priority_vectorizer.pkl
-│   ├── resolution_model.pkl
-│   ├── severity_model.pkl
-│   └── tfidf_vectorizer.pkl
-│
 ├── utils/
-│   ├── ai_model.py
-│   ├── charts.py
-│   ├── data_loader.py
-│   ├── export.py
-│   ├── filters.py
-│   └── helpers.py
-│
 └── views/
-    ├── ai_prediction.py
-    ├── analytics.py
-    ├── bug_records.py
-    ├── dashboard.py
-    ├── duplicate_detection.py
-    ├── reports.py
-    ├── resolution_time.py
-    ├── settings.py
-    └── trends.py
 ```
 
 ## Getting Started
 
 ### Prerequisites
 
-* Python 3.10 or later
+* Python 3.10+
 * Git
-* A modern web browser
+* Modern web browser
 
 ### Installation
-
-Clone the repository:
 
 ```bash
 git clone https://github.com/nithishkanna2005ga-hue/Intelligent-Software-Defect-Tracking-System-with-Resolution-Assistance.git
 cd Intelligent-Software-Defect-Tracking-System-with-Resolution-Assistance
+python -m venv venv
 ```
 
-Create and activate a virtual environment:
-
-**Windows**
+Activate the virtual environment on Windows:
 
 ```bash
-python -m venv venv
 venv\Scripts\activate
 ```
 
-Install the required dependencies:
+Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run the Application
-
-Start the Streamlit application with:
+## Run the Application
 
 ```bash
 python -m streamlit run app.py
 ```
 
-The application will be available at:
+Open the application at:
 
 ```text
 http://localhost:8501
 ```
 
-To run it on a custom port:
+To use port `8001`:
 
 ```bash
 python -m streamlit run app.py --server.port 8001
@@ -129,15 +94,16 @@ python -m streamlit run app.py --server.port 8001
 
 ## Machine Learning
 
-The system includes machine learning models for:
+The system provides:
 
-* **Severity Prediction**
-* **Priority Prediction**
-* **Resolution Time Prediction**
+* Severity Prediction
+* Priority Prediction
+* Resolution Time Prediction
+* Duplicate Detection
 
 Pre-trained models are stored in the `models/` directory.
 
-To retrain the models:
+Models can be retrained using:
 
 ```bash
 python train_priority_model.py
@@ -147,34 +113,25 @@ python train_resolution_model.py
 
 ## Dataset
 
-The application uses historical software defect data stored in:
+Historical defect data is stored in:
 
 ```text
 data/Bug_Life_Cycle_Managementreport.csv
 ```
 
-The dataset supports analytics, trend analysis, duplicate detection, and machine learning model training.
+The dataset is used for defect analysis, visualization, duplicate detection, and machine learning.
 
-## Application Workflow
+## Workflow
 
 ```text
-Historical Defect Data
-          ↓
-    Data Processing
-          ↓
- Machine Learning Models
-          ↓
-Prediction & Analysis
-          ↓
- Dashboard & Reports
-          ↓
- Resolution Assistance
+Defect Data → Data Processing → ML Models
+     ↓
+Prediction & Analysis → Dashboard & Reports
+     ↓
+Resolution Assistance
 ```
 
-## Purpose
+## Objective
 
-The objective of this project is to provide an intelligent and centralized platform for **software defect tracking and resolution assistance**, helping development and testing teams make data-driven decisions and improve defect management efficiency.
+The objective is to provide a centralized and intelligent platform for **software defect tracking, analysis, prediction, and resolution assistance**, enabling data-driven defect management.
 
-## License
-
-This project is developed for **academic and educational purposes**.
