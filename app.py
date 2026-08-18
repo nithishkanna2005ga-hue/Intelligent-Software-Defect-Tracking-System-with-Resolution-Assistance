@@ -34,7 +34,7 @@ pio.templates["professional"].layout.update(
     title=dict(
         font=dict(
             family="Inter",
-            size=28,
+            size=30,
             color="black"
         )
     ),
@@ -223,7 +223,7 @@ button {
 
 st.set_page_config(
 
-    page_title="Bug Life Cycle Management",
+page_title="Intelligent Software Defect Tracking System with Resolution Assistance",
 
     page_icon="🐞",
 
@@ -239,7 +239,7 @@ st.set_page_config(
 # APPLICATION CONSTANTS
 # =============================================================================
 
-APP_NAME = "Bug Life Cycle Management"
+APP_NAME = "Intelligent Software Defect Tracking System with Resolution Assistance"
 
 APP_VERSION = "2.0.0"
 
@@ -707,7 +707,7 @@ font-size:26px;
 font-weight:900;
 color:#111827;
 ">
-BUG LIFE CYCLE MANAGEMENT
+INTELLIGENT SOFTWARE DEFECT TRACKING SYSTEM
 </h2>
 """, unsafe_allow_html=True)
 with st.sidebar:
