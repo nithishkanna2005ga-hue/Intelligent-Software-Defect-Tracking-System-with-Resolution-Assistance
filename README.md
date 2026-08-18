@@ -1,64 +1,35 @@
-# Intelligent-Software-Defect-Tracking-System-with-Resolution-Assistance
 # Intelligent Software Defect Tracking System with Resolution Assistance
 
-An intelligent software defect tracking system built using **Python, Streamlit, Machine Learning, and historical defect data**. The system helps users track, analyze, predict, and manage software defects efficiently.
+An intelligent web-based software defect management system that combines **defect tracking, data analytics, machine learning, duplicate detection, and resolution-time prediction** in a unified Streamlit application.
+
+The system uses historical software defect data to provide actionable insights and AI-assisted predictions for improving defect management and resolution.
 
 ## Overview
 
-This application provides an interactive platform for managing software defect records and analyzing defect trends. It includes dashboards, analytics, AI-based predictions, duplicate detection, and resolution time analysis.
+The application provides an interactive interface for managing and analyzing software defects. It enables users to explore defect records, monitor trends, analyze severity and priority, identify potential duplicates, and obtain machine-learning-based predictions.
 
-The system uses historical bug data and machine learning models to assist in predicting defect properties and understanding software defect patterns.
+### Key Capabilities
 
-## Key Features
+* **Defect Management** — Search, filter, and analyze defect records
+* **Dashboard & Analytics** — Monitor defect statistics, distributions, and trends
+* **AI-Based Prediction** — Predict defect severity, priority, and resolution time
+* **Duplicate Detection** — Identify potentially similar defect reports
+* **Resolution Analysis** — Analyze historical and predicted resolution times
+* **Reports & Export** — Generate and export defect-related information
 
-### 📊 Dashboard
-- Total bug statistics
-- Open and resolved bugs
-- Critical bug count
-- Average resolution time
-- Priority and severity distribution
-- Status and module-wise analysis
+## Technology Stack
 
-### 🐞 Bug Records
-- View software defect records
-- Search and filter bugs
-- Analyze Bug ID, module, priority, severity, status, and other details
-
-### 📈 Analytics and Trends
-- Priority distribution
-- Severity distribution
-- Bug status analysis
-- Module-wise and team-wise bug analysis
-- Bug trends over time
-- Resolution time analysis
-
-### 🤖 AI Prediction
-Machine learning models are used to predict defect-related information based on bug descriptions and historical data.
-
-The project includes models for:
-- Severity Prediction
-- Priority Prediction
-- Resolution Time Prediction
-
-### 🔍 Duplicate Detection
-The system compares bug descriptions to help identify potentially similar or duplicate defects.
-
-### ⏱️ Resolution Analysis
-- Analyze defect resolution time
-- Compare resolution performance
-- Study resolution trends using historical bug data
-
-## 🛠️ Technology Stack
-
-| Technology | Purpose |
-|---|---|
-| Python | Core programming language |
-| Streamlit | Web application interface |
-| Pandas | Data processing and analysis |
-| Plotly | Interactive visualizations |
-| Scikit-learn | Machine learning |
-| Joblib | Model storage |
-| CSV | Defect dataset storage |
+| Technology   | Usage                          |
+| ------------ | ------------------------------ |
+| Python       | Application and ML development |
+| Streamlit    | Web application framework      |
+| Pandas       | Data processing                |
+| NumPy        | Numerical computation          |
+| Scikit-learn | Machine learning               |
+| NLTK         | Natural language processing    |
+| Plotly       | Interactive visualization      |
+| Joblib       | Model serialization            |
+| Git & GitHub | Version control                |
 
 ## Project Structure
 
@@ -102,3 +73,108 @@ Intelligent-Software-Defect-Tracking-System-with-Resolution-Assistance/
     ├── resolution_time.py
     ├── settings.py
     └── trends.py
+```
+
+## Getting Started
+
+### Prerequisites
+
+* Python 3.10 or later
+* Git
+* A modern web browser
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/nithishkanna2005ga-hue/Intelligent-Software-Defect-Tracking-System-with-Resolution-Assistance.git
+cd Intelligent-Software-Defect-Tracking-System-with-Resolution-Assistance
+```
+
+Create and activate a virtual environment:
+
+**Windows**
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Run the Application
+
+Start the Streamlit application with:
+
+```bash
+python -m streamlit run app.py
+```
+
+The application will be available at:
+
+```text
+http://localhost:8501
+```
+
+To run it on a custom port:
+
+```bash
+python -m streamlit run app.py --server.port 8001
+```
+
+## Machine Learning
+
+The system includes machine learning models for:
+
+* **Severity Prediction**
+* **Priority Prediction**
+* **Resolution Time Prediction**
+
+Pre-trained models are stored in the `models/` directory.
+
+To retrain the models:
+
+```bash
+python train_priority_model.py
+python train_severity_model.py
+python train_resolution_model.py
+```
+
+## Dataset
+
+The application uses historical software defect data stored in:
+
+```text
+data/Bug_Life_Cycle_Managementreport.csv
+```
+
+The dataset supports analytics, trend analysis, duplicate detection, and machine learning model training.
+
+## Application Workflow
+
+```text
+Historical Defect Data
+          ↓
+    Data Processing
+          ↓
+ Machine Learning Models
+          ↓
+Prediction & Analysis
+          ↓
+ Dashboard & Reports
+          ↓
+ Resolution Assistance
+```
+
+## Purpose
+
+The objective of this project is to provide an intelligent and centralized platform for **software defect tracking and resolution assistance**, helping development and testing teams make data-driven decisions and improve defect management efficiency.
+
+## License
+
+This project is developed for **academic and educational purposes**.
