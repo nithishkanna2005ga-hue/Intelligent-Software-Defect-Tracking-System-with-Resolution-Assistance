@@ -1,0 +1,319 @@
+/*
+==========================================================
+BUG LIFE CYCLE MANAGEMENT DASHBOARD
+CUSTOM STYLE SHEET
+==========================================================
+*/
+
+
+/* -------------------------------------------------------
+MAIN APPLICATION BACKGROUND
+------------------------------------------------------- */
+
+
+.stApp {
+
+    background:
+
+        linear-gradient(135deg,
+            #0f172a,
+            #111827);
+
+    color: white;
+
+}
+
+
+
+/* -------------------------------------------------------
+MAIN CONTENT
+------------------------------------------------------- */
+
+
+.main {
+
+    padding: 20px;
+
+}
+
+
+
+/* -------------------------------------------------------
+HEADINGS
+------------------------------------------------------- */
+
+
+h1 {
+
+    font-size: 42px !important;
+
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+}
+
+
+
+h2 {
+
+    font-size: 30px !important;
+
+    font-weight: 700;
+
+}
+
+
+
+h3 {
+
+    font-size: 22px !important;
+
+}
+
+
+
+/* -------------------------------------------------------
+SIDEBAR
+------------------------------------------------------- */
+
+
+section[data-testid="stSidebar"] {
+
+
+    background:
+
+        linear-gradient(180deg,
+
+            #111827,
+
+            #020617);
+
+
+}
+
+
+
+section[data-testid="stSidebar"] h1 {
+
+
+    color: white;
+
+}
+
+
+
+section[data-testid="stSidebar"] label {
+
+
+    color: #e5e7eb !important;
+
+    font-weight: 600;
+
+}
+
+
+
+/* -------------------------------------------------------
+CARDS
+------------------------------------------------------- */
+
+
+.metric-card {
+
+
+    background:
+
+        rgba(255, 255, 255, 0.05);
+
+
+    backdrop-filter:
+
+        blur(12px);
+
+
+    border-radius:
+
+        18px;
+
+
+    padding:
+
+        25px;
+
+
+    border:
+
+        1px solid rgba(255, 255, 255, 0.1);
+
+
+    transition:
+
+        all 0.3s ease;
+
+
+}
+
+
+
+.metric-card:hover {
+
+
+    transform:
+
+        translateY(-8px);
+
+
+}
+
+
+
+/* -------------------------------------------------------
+CHART CONTAINERS
+------------------------------------------------------- */
+
+
+div[data-testid="stPlotlyChart"] {
+
+
+    background:
+
+        rgba(255, 255, 255, 0.03);
+
+
+    padding:
+
+        10px;
+
+
+    border-radius:
+
+        15px;
+
+
+}
+
+
+
+/* -------------------------------------------------------
+DATA TABLE
+------------------------------------------------------- */
+
+
+div[data-testid="stDataFrame"] {
+
+
+    border-radius:
+
+        15px;
+
+
+    overflow: hidden;
+
+
+}
+
+
+
+/* -------------------------------------------------------
+BUTTON STYLE
+------------------------------------------------------- */
+
+
+button {
+
+
+    border-radius:
+
+        10px !important;
+
+
+}
+
+
+
+/* -------------------------------------------------------
+SELECT BOX
+------------------------------------------------------- */
+
+
+div[data-baseweb="select"]>div {
+
+
+    background-color:
+
+        #1f2937;
+
+
+    border-radius:
+
+        10px;
+
+
+}
+
+
+
+/* -------------------------------------------------------
+TEXT INPUT
+------------------------------------------------------- */
+
+
+input {
+
+
+    background-color:
+
+        #1f2937 !important;
+
+
+    color: white !important;
+
+
+}
+
+
+
+/* -------------------------------------------------------
+SCROLLBAR
+------------------------------------------------------- */
+
+
+::-webkit-scrollbar {
+
+
+    width:
+
+        8px;
+
+
+}
+
+
+
+::-webkit-scrollbar-track {
+
+
+    background:
+
+        #111827;
+
+
+}
+
+
+
+::-webkit-scrollbar-thumb {
+
+
+    background:
+
+        #2563eb;
+
+
+    border-radius:
+
+        10px;
+
+
+}
